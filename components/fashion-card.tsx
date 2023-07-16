@@ -2,23 +2,12 @@ import type { NextPage } from "next";
 import { memo } from "react";
 
 type FashionCardType = {
-  nameCard?: string;
   fashionImage?: string;
-  arrowCard?: string;
-
-  /** Action props */
-  onExploreNowClick?: () => void;
-  onArrowIconClick?: () => void;
+  cardName?: string;
 };
 
 const FashionCard: NextPage<FashionCardType> = memo(
-  ({
-    nameCard,
-    fashionImage,
-    onExploreNowClick,
-    onArrowIconClick,
-    arrowCard,
-  }) => {
+  ({ fashionImage, cardName }) => {
     return (
       <div className="w-[22.69rem] h-[37.88rem] flex flex-col items-start justify-start gap-[1.31rem] text-left text-[1.5rem] text-gray-900 font-poppins sm:max-w-[95%]">
         <img
@@ -26,24 +15,19 @@ const FashionCard: NextPage<FashionCardType> = memo(
           alt=""
           src={fashionImage}
         />
-        <div className="flex flex-row items-center justify-start gap-[6.14rem]">
+        <div className="self-stretch flex flex-row items-center justify-between">
           <div className="flex flex-col items-start justify-start gap-[0.33rem]">
             <div className="relative tracking-[-0.04em] leading-[2.34rem] font-medium inline-block w-[15.05rem] h-[1.69rem] shrink-0">
-              {nameCard}
+              {cardName}
             </div>
-            <button
-              className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-[1.13rem] tracking-[-0.04em] leading-[2.34rem] font-medium font-poppins text-gray-300 text-left inline-block w-[7.08rem] h-[1.55rem] shrink-0"
-              autoFocus
-              onClick={onExploreNowClick}
-            >
+            <div className="relative text-[1.13rem] tracking-[-0.04em] leading-[2.34rem] font-medium text-gray-300 inline-block w-[7.08rem] h-[1.55rem] shrink-0">
               Explore Now!
-            </button>
+            </div>
           </div>
           <img
-            className="relative w-[1.57rem] h-[1.04rem] cursor-pointer"
+            className="relative w-[1.57rem] h-[1.04rem]"
             alt=""
-            src={arrowCard}
-            onClick={onArrowIconClick}
+            src="/arrow-1.svg"
           />
         </div>
       </div>

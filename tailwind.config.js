@@ -73,13 +73,10 @@ module.exports = {
         max: "1200px",
       },
       md: {
-        max: "768px",
+        max: "960px",
       },
       sm: {
-        max: "428px",
-      },
-      big: {
-        raw: "screen and (min-width: 1440px)",
+        max: "420px",
       },
     },
   },

@@ -1,15 +1,6 @@
 import type { NextPage } from "next";
-import { useCallback } from "react";
 
 const DownloadApp: NextPage = () => {
-  const onFrameButtonClick = useCallback(() => {
-    window.open("https://www.example.com/");
-  }, []);
-
-  const onFrameButton1Click = useCallback(() => {
-    window.open("https://www.example.com/");
-  }, []);
-
   return (
     <div className="flex flex-col items-start justify-start gap-[3.05rem] text-left text-[2.25rem] text-black font-poppins">
       <div className="flex flex-col items-start justify-start gap-[1.92rem]">
@@ -23,20 +14,14 @@ const DownloadApp: NextPage = () => {
         </div>
       </div>
       <div className="flex flex-row items-start justify-start gap-[0.89rem]">
-        <button
-          className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-col items-start justify-start"
-          onClick={onFrameButtonClick}
-        >
+        <button className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-col items-start justify-start">
           <img
             className="relative rounded-5xs-5 w-[9.56rem] h-[3.33rem] object-cover"
             alt=""
             src="/rectangle-55@2x.png"
           />
         </button>
-        <button
-          className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-col items-start justify-start"
-          onClick={onFrameButton1Click}
-        >
+        <button className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-col items-start justify-start">
           <img
             className="relative rounded-5xs-5 w-[9.56rem] h-[3.33rem] object-cover"
             alt=""
