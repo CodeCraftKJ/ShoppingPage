@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-import NavigationBar from "../components/navigation-bar";
-import Hero from "../components/hero";
-import BrandsIcon from "../components/brands-icon";
-import NewArrivalsSection from "../components/new-arrivals-section";
-import Favourites from "../components/favourites";
-import AppDownload from "../components/app-download";
-import Community from "../components/community";
-import Footer from "../components/footer";
+import NavigationBar from "../components/navigation-bar/navigation-bar";
+import Hero from "../components/hero/hero";
+import BrandsIcon from "../components/brands/brands-icon";
+import NewArrivalsSection from "../components/new-arrivals/new-arrivals-section";
+import Favourites from "../components/favourites/favourites";
+import AppDownload from "../components/appdownload/app-download";
+import Community from "../components/community/community";
+import Footer from "../components/footer/footer";
 
 const ShoppingLandingPageFinal: NextPage = () => {
   return (

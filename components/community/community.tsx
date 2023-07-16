@@ -18,8 +18,6 @@ const Community: NextPage = memo(() => {
             className="[border:none] font-poppins text-[1.13rem] bg-[transparent] flex-1 relative tracking-[0.03em] leading-[1.64rem] text-gray-700 text-left focus:[outline:none] md:text-[0.94rem] md:w-[calc(100%_-_120px);]"
             type="text"
             placeholder="Add your email here"
-            maxLength
-            minLength
           />
           <button className="cursor-pointer [border:none] py-[0.69rem] px-[1.63rem] bg-black rounded-md flex flex-row items-center justify-center sm:pl-[0.63rem] sm:pr-[0.63rem] sm:box-border">
             <div className="relative text-[1.55rem] tracking-[0.03em] leading-[1.64rem] capitalize font-medium font-poppins text-white text-left md:text-[1.25rem]">

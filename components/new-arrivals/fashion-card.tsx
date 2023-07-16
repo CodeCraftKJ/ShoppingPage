@@ -7,7 +7,7 @@ type FashionCardType = {
 };
 
 const FashionCard: NextPage<FashionCardType> = memo(
-  ({ fashionImage, cardName }) => {
+  ({ fashionImage, cardName }: FashionCardType) => {
     return (
       <div className="w-[22.69rem] h-[37.88rem] flex flex-col items-start justify-start gap-[1.31rem] text-left text-[1.5rem] text-gray-900 font-poppins sm:max-w-[95%]">
         <img

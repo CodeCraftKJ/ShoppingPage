@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { memo, useCallback } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const FashionLogo: NextPage = memo(() => {
   const router = useRouter();
@@ -19,9 +19,9 @@ const FashionLogo: NextPage = memo(() => {
         alt=""
         src="/vector.svg"
       />
-      <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-[1.88rem] tracking-[0.03em] font-black font-poppins text-black text-left inline-block lg:text-[1.56rem] md:text-[1.25rem]">
+      <div className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-[1.88rem] tracking-[0.03em] font-black font-poppins text-black text-left inline-block lg:text-[1.56rem] md:text-[1.25rem]">
         FASHION
-      </button>
+      </div>
     </button>
   );
 });

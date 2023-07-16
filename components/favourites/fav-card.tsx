@@ -4,7 +4,7 @@ type FavCardType = {
   cardImage?: string;
 };
 
-const FavCard: NextPage<FavCardType> = ({ cardImage }) => {
+const FavCard: NextPage<FavCardType> = ({ cardImage }: any) => {
   return (
     <div className="flex-1 flex flex-col items-start justify-start gap-[1.31rem] text-left text-[1.5rem] text-black font-poppins md:flex-[unset] md:self-stretch">
       <img
