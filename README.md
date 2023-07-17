@@ -17,6 +17,10 @@ To preview and run the project on your local machine, follow the steps below:
 
 Feel free to explore the layout and interact with the buttons, inputs, and the sign-in button.
 
+## Deployment
+
+The FASHION web layout is deployed and can be accessed at [https://shopping-page-eight.vercel.app/](https://shopping-page-eight.vercel.app/).
+
 ## Customization
 
 You can customize the layout according to your requirements. The graphics used in this project were taken from the [Shopping Website](https://www.figma.com/community/file/1135871952737326157/Shopping-Website) Figma community file. You can access the Figma file to view and modify the graphics to suit your design preferences. Additionally, you can extend the functionality by integrating backend APIs and implementing features such as user authentication and more.
